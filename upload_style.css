@@ -1,0 +1,115 @@
+.upload-body {
+    background-image: url('assets/images/upload-bg.jpg'); /* ✅ Make sure this image exists */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.upload-container {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    text-align: center;
+    width: 90%;
+    max-width: 520px;
+    backdrop-filter: blur(8px);
+}
+
+.glow-title {
+    font-size: 30px;
+    color: #00ffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 12px #00ffff, 0 0 22px #00ccff;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffff;
+    }
+    to {
+        text-shadow: 0 0 25px #00ffff, 0 0 35px #00ccff;
+    }
+}
+
+.upload-form input[type="text"],
+.upload-form select,
+.upload-form input[type="file"] {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background: #f2f2f2;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.upload-form input[type="text"]:focus,
+.upload-form select:focus,
+.upload-form input[type="file"]:focus {
+    outline: none;
+    box-shadow: 0 0 12px #00ffff;
+}
+
+.upload-btn {
+    padding: 14px 30px;
+    background: linear-gradient(to right, #00ccff, #00ff99);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.4s ease;
+    box-shadow: 0 0 12px #00ffff;
+}
+
+.upload-btn:hover {
+    background: linear-gradient(to right, #00ff99, #00ccff);
+    box-shadow: 0 0 25px #00ffff, 0 0 35px #00ffcc;
+    transform: scale(1.03);
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: white;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* 📝 Info Note */
+.note {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 15px;
+    border-left: 4px solid #00ffff;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+.note i {
+    margin-right: 8px;
+    color: #00ffff;
+}

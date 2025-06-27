@@ -1,0 +1,91 @@
+/* login-style.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body.auth-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('assets/images/login-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    animation: glow 2s infinite alternate;
+    color: white;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    }
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #00ffff;
+}
+
+.input-container {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.input-container i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #aaa;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* extra space for icon */
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.auth-btn {
+    background: #00ffff;
+    color: black;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 15px;
+}
+
+.auth-btn:hover {
+    background: #00cccc;
+}
+
+.auth-container a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}

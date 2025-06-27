@@ -1,0 +1,270 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+/* Full Page Background */
+body {
+    background: url('assets/images/back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center Content */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stylish Headings */
+h1, h2, h3 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* ✅ Search Bar & Category Filter */
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search-form input, .search-form select {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 45%;
+    text-align: center;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.search-form button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ✅ Table Design */
+.file-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.file-table th, .file-table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: black; /* ✅ Ensure text is visible */
+}
+
+.file-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.file-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.file-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ✅ Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.upload-btn { background-color: #28a745; }
+.upload-btn:hover { background-color: #218838; transform: scale(1.05); }
+
+.logout-btn { background-color: #ffcc00; color: black; }
+.logout-btn:hover { background-color: #e6b800; transform: scale(1.05); }
+
+.download-btn { background-color: #17a2b8; }
+.download-btn:hover { background-color: #138496; transform: scale(1.05); }
+
+.delete-btn { background-color: #dc3545; }
+.delete-btn:hover { background-color: #c82333; transform: scale(1.05); }
+
+/* ✅ Upload Page Background */
+.upload-body {
+    background: url('assets/images/back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ✅ Upload Form Container */
+.upload-container {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ Upload Form */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.upload-form label {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+.upload-form input,
+.upload-form select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.3s ease-in-out;
+}
+
+.upload-form input:focus,
+.upload-form select:focus {
+    border-color: #00ffcc;
+    box-shadow: 0px 0px 8px rgba(0, 255, 204, 0.7);
+    outline: none;
+}
+
+/* ========================= */
+/* LOGIN & REGISTER PAGE STYLES */
+/* ========================= */
+
+/* Centering the form */
+.auth-container {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 80px;
+}
+
+/* Form Headings */
+.auth-container h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00eaff;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.3);
+}
+
+/* Input Fields */
+.auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #00eaff;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.auth-container input:focus {
+    border-color: #ffcc00;
+    box-shadow: 0px 0px 8px rgba(255, 204, 0, 0.8);
+}
+
+/* Buttons */
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.auth-container button:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Links */
+.auth-container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.auth-container a {
+    color: #00eaff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,170 @@
+body.dashboard-body {
+    background-image: url('assets/images/dashboard_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+.dashboard-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    margin: 5% auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+.welcome-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-input, .category-dropdown {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #00bcd4, #2196f3);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: linear-gradient(to right, #2196f3, #00bcd4);
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.upload-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.upload-btn:hover {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.document-heading {
+    font-size: 22px;
+    color: #00ffff;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.documents-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.documents-table th,
+.documents-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.documents-table th {
+    background-color: #111;
+    color: #00ffff;
+}
+
+.documents-table tr:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+.action-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.action-btn.download {
+    background-color: #00b894;
+}
+
+.action-btn.download:hover {
+    background-color: #00cec9;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.action-btn.delete {
+    background-color: #d63031;
+}
+
+.action-btn.delete:hover {
+    background-color: #ff7675;
+    box-shadow: 0 0 10px #ff6b6b;
+}
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff4b2b;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.logout-btn i {
+    margin-right: 6px;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    box-shadow: 0 0 20px #ff4b2b;
+}

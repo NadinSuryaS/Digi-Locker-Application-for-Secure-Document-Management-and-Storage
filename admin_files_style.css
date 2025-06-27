@@ -1,0 +1,108 @@
+.admin-files-body {
+    background-image: url('assets/images/admin-files-bg.jpg'); /* Use your preferred image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-files-container {
+    background: rgba(0, 0, 0, 0.75);
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 0 30px #00ffcc;
+    color: #fff;
+    text-align: center;
+}
+
+.glow-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ccff;
+}
+
+.files-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.files-table th, .files-table td {
+    padding: 15px;
+    border: 1px solid #00ffff;
+    text-align: center;
+}
+
+.files-table th {
+    background-color: rgba(0, 255, 255, 0.3);
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.files-table td {
+    color: #fff;
+}
+
+.action-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.download {
+    background: #00cc99;
+    color: white;
+}
+
+.download:hover {
+    background: #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+.delete {
+    background: #ff4d4d;
+    color: white;
+}
+
+.delete:hover {
+    background: #ff1a1a;
+    box-shadow: 0 0 15px #ff6666;
+}
+
+.back-btn, .logout-btn {
+    position: absolute;
+    top: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.back-btn {
+    left: 30px;
+    background: #0099cc;
+    box-shadow: 0 0 10px #00ccff;
+}
+
+.logout-btn {
+    right: 30px;
+    background: #ff6600;
+    box-shadow: 0 0 10px #ff6600;
+}
+
+.back-btn:hover, .logout-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px white;
+}
